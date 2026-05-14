@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Lucky 7 Grill | Cicero, IL</title>
-  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
@@ -14,94 +14,201 @@
     <div class="nav-inner">
       <div class="logo">Lucky <span>7</span> Grill</div>
       <ul class="nav-links">
-        <li><a href="#menu">Menu</a></li>
+        <li><a href="#food">Food</a></li>
+        <li><a href="#menu">Full Menu</a></li>
         <li><a href="#about">About</a></li>
         <li><a href="#contact">Contact</a></li>
-        <li><a href="tel:7089147774" class="nav-cta">Order Now</a></li>
+        <li><a href="tel:7089147774" class="nav-cta">Call to Order</a></li>
       </ul>
       <button class="hamburger" id="hamburger" aria-label="Open menu">&#9776;</button>
     </div>
     <ul class="mobile-menu" id="mobileMenu">
-      <li><a href="#menu">Menu</a></li>
+      <li><a href="#food">Food</a></li>
+      <li><a href="#menu">Full Menu</a></li>
       <li><a href="#about">About</a></li>
       <li><a href="#contact">Contact</a></li>
-      <li><a href="tel:7089147774">Order Now</a></li>
+      <li><a href="tel:7089147774">Call to Order</a></li>
     </ul>
   </nav>
 
   <!-- HERO -->
   <section class="hero">
+    <div class="hero-bg" style="background-image: url('img-chicken-ribs.jpg');"></div>
     <div class="hero-overlay"></div>
     <div class="hero-content">
-      <p class="hero-tag">Family Owned · Cicero, IL</p>
+      <p class="hero-tag">Family Owned · Cicero, IL · Open Daily</p>
       <h1>Fire-Broiled.<br/>Bold Flavors.<br/>Real Food.</h1>
-      <p class="hero-sub">Ribs, burgers, chicken & the legendary Tres Leches Pancakes — all made with love since day one.</p>
+      <p class="hero-sub">Flame broiled chicken, BBQ ribs, burgers, wings & the legendary Tres Leches Pancakes — scratch-made every day at 3740 S Cicero Ave.</p>
       <div class="hero-btns">
-        <a href="#menu" class="btn-primary">See the Menu</a>
-        <a href="tel:7089147774" class="btn-outline">Call to Order</a>
+        <a href="#food" class="btn-primary">See the Food</a>
+        <a href="tel:7089147774" class="btn-outline">Call Us: (708) 914-7774</a>
       </div>
     </div>
-    <div class="hero-badge">
-      <span class="badge-num">7</span>
-      <span class="badge-text">Days<br/>Open</span>
+    <div class="hero-hours">
+      <div class="hours-block">
+        <span class="hours-label">Mon – Sat</span>
+        <span class="hours-time">6AM – 11PM</span>
+      </div>
+      <div class="hours-divider"></div>
+      <div class="hours-block">
+        <span class="hours-label">Sunday</span>
+        <span class="hours-time">7AM – 7PM</span>
+      </div>
     </div>
   </section>
 
   <!-- HIGHLIGHTS BAR -->
   <div class="highlights-bar">
-    <div class="highlight"><span>🔥</span> Fire-Broiled Daily</div>
-    <div class="highlight"><span>🥞</span> Tres Leches Pancakes</div>
-    <div class="highlight"><span>🚗</span> Delivery & Takeout</div>
-    <div class="highlight"><span>🍽️</span> Catering Available</div>
+    <div class="highlight">🔥 Fire-Broiled Daily</div>
+    <div class="highlight">🍖 BBQ Ribs</div>
+    <div class="highlight">🍗 Flame Broiled Chicken</div>
+    <div class="highlight">🥞 Tres Leches Pancakes</div>
+    <div class="highlight">🚗 Delivery & Takeout</div>
+    <div class="highlight">🎉 Catering Available</div>
   </div>
 
-  <!-- MENU -->
-  <section class="menu" id="menu">
+  <!-- FOOD PHOTO GRID -->
+  <section class="food" id="food">
     <div class="section-inner">
-      <p class="section-tag">What We Serve</p>
-      <h2>The Menu</h2>
-      <div class="menu-grid">
+      <p class="section-tag">Fresh Every Day</p>
+      <h2>The Food</h2>
+      <div class="food-grid">
 
-        <div class="menu-card">
-          <div class="menu-icon">🍖</div>
-          <h3>Fire-Broiled Ribs</h3>
-          <p>Slow-cooked, fall-off-the-bone ribs kissed by open flame. A Lucky 7 staple.</p>
-          <span class="menu-badge">Fan Favorite</span>
+        <div class="food-hero-card">
+          <img src="img-chicken-ribs.jpg" alt="Flame broiled chicken and BBQ ribs plate" />
+          <div class="food-label">
+            <span class="food-title">Chicken &amp; Ribs Combo</span>
+            <span class="food-desc">Flame broiled chicken + BBQ ribs · served w/ rice, corn &amp; pita</span>
+          </div>
         </div>
 
-        <div class="menu-card">
-          <div class="menu-icon">🍗</div>
-          <h3>Broiled Chicken</h3>
-          <p>Juicy, charred, and seasoned to perfection. Served whole or in pieces.</p>
+        <div class="food-card">
+          <img src="img-burgers.jpg" alt="Lucky 7 burgers with fries" />
+          <div class="food-label">
+            <span class="food-title">The Burgers</span>
+            <span class="food-desc">100% Angus beef · from $4.99</span>
+          </div>
         </div>
 
-        <div class="menu-card">
-          <div class="menu-icon">🍔</div>
-          <h3>Burgers</h3>
-          <p>Thick patties, fresh toppings, toasted buns. Straightforward and satisfying.</p>
-          <span class="menu-badge">Fan Favorite</span>
+        <div class="food-card">
+          <img src="img-wings.jpg" alt="Sauced wings with fries" />
+          <div class="food-label">
+            <span class="food-title">Wings</span>
+            <span class="food-desc">BBQ · Mild · Hot · Buffalo · Diablo · Lemon Pepper</span>
+          </div>
         </div>
 
-        <div class="menu-card">
-          <div class="menu-icon">🥞</div>
-          <h3>Tres Leches Pancakes</h3>
-          <p>The talk of Cicero. Fluffy pancakes soaked in tres leches — breakfast has never been this good.</p>
-          <span class="menu-badge">Must Try</span>
+        <div class="food-card">
+          <img src="img-chilaquiles.jpg" alt="Chilaquiles and eggs breakfast plate" />
+          <div class="food-label">
+            <span class="food-title">Chilaquiles &amp; Eggs</span>
+            <span class="food-desc">The Breakfast Club · served w/ hashbrowns &amp; toast · $9.99</span>
+          </div>
         </div>
 
-        <div class="menu-card">
-          <div class="menu-icon">🥚</div>
-          <h3>Breakfast & Brunch</h3>
-          <p>We open at 6am for a reason. Full breakfast menu to start your day right.</p>
-        </div>
-
-        <div class="menu-card">
-          <div class="menu-icon">🎉</div>
-          <h3>Catering</h3>
-          <p>Feeding a crowd? Lucky 7 caters events big and small. Call us for details.</p>
+        <div class="food-card">
+          <img src="img-drink.jpg" alt="Lucky 7 Grill signature branded drink" />
+          <div class="food-label">
+            <span class="food-title">Signature Drinks</span>
+            <span class="food-desc">Milkshakes, lemonade, juices &amp; more</span>
+          </div>
         </div>
 
       </div>
+    </div>
+  </section>
+
+  <!-- MENU HIGHLIGHTS -->
+  <section class="menu-section" id="menu">
+    <div class="section-inner">
+      <p class="section-tag">What We Serve</p>
+      <h2>Menu Highlights</h2>
+      <div class="menu-categories">
+
+        <div class="menu-cat">
+          <h3>🍗 Flame Broiled Chicken</h3>
+          <div class="menu-items">
+            <div class="menu-item"><span>1/4 Chicken</span><span>$9.99</span></div>
+            <div class="menu-item"><span>1/2 Chicken</span><span>$13.99</span></div>
+            <div class="menu-item"><span>1/4 BBQ Chicken</span><span>$10.99</span></div>
+            <div class="menu-item"><span>1/2 BBQ Chicken</span><span>$14.99</span></div>
+          </div>
+          <p class="menu-note">Served w/ pita, rice, salsa &amp; veggie of the day</p>
+        </div>
+
+        <div class="menu-cat">
+          <h3>🍖 BBQ Ribs</h3>
+          <div class="menu-items">
+            <div class="menu-item"><span>Half Slab</span><span>$16.99</span></div>
+            <div class="menu-item"><span>Full Slab</span><span>$24.99</span></div>
+          </div>
+          <p class="menu-note">Served w/ garlic bread &amp; choice of rice or fries</p>
+        </div>
+
+        <div class="menu-cat">
+          <h3>🍔 The Burgers</h3>
+          <div class="menu-items">
+            <div class="menu-item"><span>Cheeseburger</span><span>$4.99</span></div>
+            <div class="menu-item"><span>Double Cheeseburger</span><span>$6.99</span></div>
+            <div class="menu-item"><span>Bacon Double</span><span>$7.99</span></div>
+            <div class="menu-item featured-item"><span>The Lucky 7 🏆</span><span>$9.99</span></div>
+            <div class="menu-item"><span>Gyro Cheeseburger</span><span>$7.99</span></div>
+          </div>
+          <p class="menu-note">100% Angus beef · all the fixings</p>
+        </div>
+
+        <div class="menu-cat">
+          <h3>🥞 The Breakfast Club</h3>
+          <div class="menu-items">
+            <div class="menu-item"><span>2 Eggs Any Style</span><span>$7.99</span></div>
+            <div class="menu-item"><span>Chilaquiles + Eggs</span><span>$9.99</span></div>
+            <div class="menu-item"><span>Skirt Steak + Eggs</span><span>$16.99</span></div>
+            <div class="menu-item"><span>Full Stack Pancakes (4)</span><span>$8.99</span></div>
+            <div class="menu-item featured-item"><span>Tres Leches Pancakes ✨</span><span>Ask us!</span></div>
+          </div>
+          <p class="menu-note">Served daily from 6AM (7AM Sun)</p>
+        </div>
+
+        <div class="menu-cat">
+          <h3>🌶️ Loaded Fries</h3>
+          <div class="menu-items">
+            <div class="menu-item"><span>Chili Cheese Fries</span><span>$6.99</span></div>
+            <div class="menu-item"><span>Gyro Cheese Fries</span><span>$9.99</span></div>
+            <div class="menu-item"><span>The Philly Fries</span><span>$9.99</span></div>
+            <div class="menu-item"><span>Buffalo Chicken Fries</span><span>$9.99</span></div>
+            <div class="menu-item"><span>Italian Beef Fries</span><span>$9.99</span></div>
+          </div>
+          <p class="menu-note">Small $2.99 · Large $3.99</p>
+        </div>
+
+        <div class="menu-cat">
+          <h3>⭐ Mega Specials</h3>
+          <div class="menu-items">
+            <div class="menu-item"><span>5 Hamburgers</span><span>$16.99</span></div>
+            <div class="menu-item"><span>5 Hotdogs</span><span>$16.99</span></div>
+            <div class="menu-item"><span>5 Pizza Puffs</span><span>$17.99</span></div>
+          </div>
+          <p class="menu-note">All served w/ 1 large order of fries</p>
+        </div>
+
+      </div>
+
+      <div class="full-menu-wrap">
+        <p class="section-tag" style="margin-bottom:1rem;">The Full Picture</p>
+        <img src="img-menu.jpg" alt="Full Lucky 7 Grill menu board" class="menu-img" />
+        <p class="menu-img-caption">Call us at <a href="tel:7089147774">(708) 914-7774</a> or email <a href="mailto:thelucky7grill@gmail.com">thelucky7grill@gmail.com</a> for full menu details</p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- TESTIMONIAL -->
+  <section class="testimonial">
+    <div class="section-inner">
+      <blockquote>
+        "11/10 — amazing fire broiled chicken, ribs, burgers, and their tres leches pancakes... I'm obsessed. A great new addition to Cicero. Family owned. Friendly staff!"
+      </blockquote>
+      <cite>— Happy Guest, via Google</cite>
     </div>
   </section>
 
@@ -111,16 +218,16 @@
       <div class="about-text">
         <p class="section-tag">Our Story</p>
         <h2>More Than Just a Grill</h2>
-        <p>Lucky 7 Grill is a family-owned spot right in the heart of Cicero, IL. We built this place on the belief that good food doesn't need to be complicated — just fresh, fire-broiled, and made with care.</p>
-        <p>From the moment we opened our doors, the community welcomed us with open arms. Whether you're stopping in for a quick breakfast at 6am or settling in for ribs on a Friday night, you're always welcome here.</p>
+        <p>Lucky 7 Grill is a family-owned restaurant in the heart of Cicero, IL. We built this place on the belief that good food doesn't need to be complicated — just fresh, fire-broiled, and made with care.</p>
+        <p>From early morning breakfast to late night dinners, we're here for Cicero seven days a week. Whether you're grabbing a quick bite or feeding the whole crew, you're always welcome here.</p>
         <div class="about-stats">
           <div class="stat">
-            <span class="stat-num">6am</span>
+            <span class="stat-num">6AM</span>
             <span class="stat-label">Open Daily</span>
           </div>
           <div class="stat">
-            <span class="stat-num">11pm</span>
-            <span class="stat-label">Close Daily</span>
+            <span class="stat-num">11PM</span>
+            <span class="stat-label">Close Mon–Sat</span>
           </div>
           <div class="stat">
             <span class="stat-num">★ 4.8</span>
@@ -136,7 +243,7 @@
         </div>
         <div class="feature-card">
           <span class="feature-icon">🎱</span>
-          <h4>Pool Table & Slots</h4>
+          <h4>Pool Table &amp; Slots</h4>
           <p>Hang out, relax, and enjoy the vibe.</p>
         </div>
         <div class="feature-card">
@@ -145,21 +252,11 @@
           <p>Every guest is treated like family.</p>
         </div>
         <div class="feature-card">
-          <span class="feature-icon">🚗</span>
-          <h4>Delivery & Takeout</h4>
-          <p>Order through Grubhub or Seamless.</p>
+          <span class="feature-icon">🎉</span>
+          <h4>Catering Available</h4>
+          <p>Feeding a crowd? Call us to arrange catering for any event.</p>
         </div>
       </div>
-    </div>
-  </section>
-
-  <!-- TESTIMONIAL -->
-  <section class="testimonial">
-    <div class="section-inner">
-      <blockquote>
-        "11/10 — amazing fire broiled chicken, ribs, burgers, and their tres leches pancakes... I'm obsessed. A great new addition to Cicero. Family owned. Friendly staff!"
-      </blockquote>
-      <cite>— Happy Guest, via Google</cite>
     </div>
   </section>
 
@@ -178,28 +275,30 @@
           <a href="tel:7089147774">(708) 914-7774</a>
         </div>
         <div class="info-row">
+          <span class="info-label">✉️ Email</span>
+          <a href="mailto:thelucky7grill@gmail.com">thelucky7grill@gmail.com</a>
+        </div>
+        <div class="info-row">
           <span class="info-label">🕐 Hours</span>
-          <span>Monday – Sunday: 6:00 AM – 11:00 PM</span>
+          <span>Mon – Sat: 6:00 AM – 11:00 PM<br/>Sunday: 7:00 AM – 7:00 PM</span>
         </div>
         <div class="info-row">
           <span class="info-label">🚗 Delivery</span>
-          <span>Available via Grubhub & Seamless</span>
+          <span>Available via Grubhub &amp; Seamless</span>
         </div>
         <div class="contact-btns">
           <a href="tel:7089147774" class="btn-primary">Call Us</a>
-          <a href="https://www.google.com/maps/search/Lucky+7+Grill+Cicero+IL" target="_blank" class="btn-outline">Get Directions</a>
+          <a href="mailto:thelucky7grill@gmail.com" class="btn-outline">Email Us</a>
         </div>
       </div>
-      <div class="map-placeholder">
+      <div class="map-wrap">
         <iframe
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2972.5!2d-87.7457!3d41.8486!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2s3740+S+Cicero+Ave%2C+Cicero%2C+IL+60804!5e0!3m2!1sen!2sus!4v1"
-          width="100%"
-          height="320"
-          style="border:0; border-radius: 12px;"
-          allowfullscreen=""
-          loading="lazy"
+          width="100%" height="340"
+          style="border:0;border-radius:12px;"
+          allowfullscreen="" loading="lazy"
           referrerpolicy="no-referrer-when-downgrade"
-          title="Lucky 7 Grill location map">
+          title="Lucky 7 Grill map">
         </iframe>
       </div>
     </div>
@@ -210,6 +309,7 @@
     <div class="footer-inner">
       <div class="footer-logo">Lucky <span>7</span> Grill</div>
       <p>3740 S Cicero Ave, Cicero, IL 60804 &nbsp;|&nbsp; (708) 914-7774</p>
+      <p>thelucky7grill@gmail.com &nbsp;|&nbsp; <a href="https://www.instagram.com/thelucky7grill/" target="_blank">@thelucky7grill on Instagram</a></p>
       <p class="footer-copy">© 2025 Lucky 7 Grill. All rights reserved.</p>
     </div>
   </footer>
